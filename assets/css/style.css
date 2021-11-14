@@ -856,7 +856,7 @@ span.arrow {
 
 .step-vector-container {
     display: inline-block;
-    max-width: 170px;
+    max-width: 180px;
 }
 
 
@@ -868,4 +868,19 @@ span.arrow {
 
 .step-vector {
     max-width: 120px;
+}
+
+.step-vector-container p {
+    padding: 15px;
+    border: solid 1px #dadada;
+    margin-left: 20px;
+    margin-right: -20px;
+    border-radius: 10px;
+    margin-top: 5px;
+    font-size: 14px;
+}
+.step-title {
+    text-align: right;
+    max-width: 200px;
+    margin-right: 80px;
 }
