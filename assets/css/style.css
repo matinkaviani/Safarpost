@@ -12,10 +12,13 @@ a {
     color: #0094ff;
     text-decoration: none;
 }
-
+svg {
+    vertical-align: bottom;
+}
 body {
     background-color: #fff;
     font-family: IranYekan;
+    user-select: none;
 }
 /*navigation*/
 .navbar {
@@ -830,6 +833,7 @@ span.arrow {
     line-height: 40px;
     color: #fff;
     margin: auto;
+    transition: all .3s;
 }
 
     .new_site_ribbon:before {
@@ -856,7 +860,8 @@ span.arrow {
 
 .step-vector-container {
     display: inline-block;
-    max-width: 180px;
+    max-width: 179px;
+    vertical-align: top;
 }
 
 
@@ -878,9 +883,84 @@ span.arrow {
     border-radius: 10px;
     margin-top: 5px;
     font-size: 14px;
+    height: 85px;
+    display: flex;
+    align-items: center;
 }
 .step-title {
     text-align: right;
     max-width: 200px;
     margin-right: 80px;
+    font-size: 22px;
+    font-family: 'IranYekanBold';
+    margin-bottom: 15px;
+}
+.second-steps {
+    margin-right: auto;
+    margin-left: 50px;
+}
+
+.ribbon-second:before {
+    border-color: rgb(0 148 255) rgb(0 148 255) rgb(0 148 255) #0094ff00;
+    left: -15px;
+    right: auto;
+}
+
+.ribbon-second::after {
+    left: auto;
+    right: -15px;
+    border-left: 15px solid rgb(0 148 255);
+    border-right: none;
+}
+
+.new_site_ribbon:hover {
+    transform: translateX(-10px);
+}
+
+.ribbon-second:hover {
+    transform: translateX(10px);
+}
+
+.footer h3 {
+    font-size: 18px;
+    color: #0094ff;
+    font-family: 'IranYekanBold';
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.footer ul {
+    list-style: none;
+    padding-right: 0;
+    text-align: right;
+    line-height: 33px;
+    font-family: 'IranYekanBold';
+    font-size: 14px;
+}
+
+section.footer {
+    padding: 50px 0 50px 0;
+}
+
+.footer svg {
+    vertical-align: middle;
+    fill: #0094ff;
+}
+
+
+li.footer-border {
+    position: relative;
+    margin-right: 20px;
+}
+
+li.footer-border:before {content: "";position: absolute;right: -13px;width: 1px;height: 100%;background: #0094ff;top: 50%;transform: translateY(-50%);}
+
+li.footer-border:last-child:before {
+    height: 50px;
+    top: 0;
+}
+
+.fitsr-child-footerb:before {
+    bottom: 0;
+    transform: translateY(-9px) !important;
 }
