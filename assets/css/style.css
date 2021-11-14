@@ -110,28 +110,35 @@ body {
     .top-filters, .filters {
         display: block !important;
     }
+
     .main-content {
         margin-top: 50px !important;
     }
+
     .main-title, .main-subtitle {
         text-align: center !important;
     }
+
     .top-filters {
         padding: 20px;
     }
+
     .start-date {
         margin-right: 0 !important;
     }
-    .start-date input, .end-date input {
+
+        .start-date input, .end-date input {
             min-width: 250px !important;
             margin-top: 15px;
             margin-bottom: 15px;
             border-left: solid 1px#bfbfbf !important;
             border-radius: 5px !important;
         }
+
     .nav-list-container {
         display: block !important;
     }
+
     .ad-carousel .owl-prev, .ad-carousel .owl-next {
         display: none !important;
     }
@@ -239,6 +246,7 @@ a.brand {
 .font-20 {
     font-size: 20px;
 }
+
 .font-30 {
     font-size: 30px;
 }
@@ -332,6 +340,7 @@ section.main-content-top {
     margin: auto;
     margin-top: 70px;
 }
+
 section.main-content {
     max-width: 950px;
     margin: auto;
@@ -631,23 +640,27 @@ a:hover {
 .dropdown-menu a {
     color: #6a6a6a;
 }
+
 .hover1:hover {
     background: white;
     color: #0094ff;
 }
+
 .hover2:hover {
     color: white !important;
     background-color: #0094ff !important;
 }
+
 .card-contents {
     padding: 25px;
     background: #f5f5f5;
     border-radius: 10px;
 }
 
-.card-contents h2 {
-    color: #0094ff;
-}
+    .card-contents h2 {
+        color: #0094ff;
+    }
+
 .card-subtitles {
     color: #848484;
 }
@@ -678,11 +691,13 @@ a:hover {
 .card-steps p {
     color: #848484;
 }
+
 .max-w-250 {
     max-width: 130px;
     margin: auto;
     font-size: 12px;
 }
+
 .card-steps:before {
     content: "";
     position: absolute;
@@ -693,9 +708,11 @@ a:hover {
     right: 128px;
     transform: translateX(-50%);
 }
+
 .last-card-step:before {
     visibility: hidden;
 }
+
 .icon-step {
     max-width: 250px;
     margin: auto;
@@ -705,33 +722,42 @@ a:hover {
     border-top-left-radius: 10px;
 }
 
-.icon-step img {
-    max-width: 100px;
-}
+    .icon-step img {
+        max-width: 100px;
+    }
+
 .pt-40 {
     padding-top: 40px;
 }
+
 .mt-30 {
     margin-top: 30px !important;
 }
+
 .mt-50 {
     margin-top: 50px !important;
 }
+
 .mt-70 {
     margin-top: 70px !important;
 }
+
 .max-w100 {
     max-width: 100% !important;
 }
+
 .max-w-240 {
     max-width: 240px;
 }
+
 .w-40 {
     width: 40px;
 }
+
 .bg-grey {
     background: #f5f5f5;
 }
+
 span.arrow {
     width: 80%;
     height: 1px;
@@ -741,33 +767,39 @@ span.arrow {
     position: relative;
 }
 
-span.arrow:after {}
+    span.arrow:after {
+    }
 
-span.arrow:after {
-    position: absolute;
-    top: -4px;
-    left: -5px;
-    content: '';
-    width: 0;
-    height: 0;
-    border-right: solid 5px rgb(0 148 255);
-    border-bottom: solid 5px transparent;
-    border-top: solid 5px transparent;
-}
+    span.arrow:after {
+        position: absolute;
+        top: -4px;
+        left: -5px;
+        content: '';
+        width: 0;
+        height: 0;
+        border-right: solid 5px rgb(0 148 255);
+        border-bottom: solid 5px transparent;
+        border-top: solid 5px transparent;
+    }
+
 .ad-carousel .owl-dots, .ad-carousel .owl-nav {
     display: block !important;
 }
+
 .min-w50 {
     min-width: 50px;
 }
+
 .ad-carousel span {
     direction: rtl;
 }
+
 .ad-card {
     padding: 10px;
     background: #fff;
     border-radius: 10px;
 }
+
 .ad-carousel .owl-prev {
     position: absolute;
     top: 50%;
@@ -783,6 +815,57 @@ span.arrow:after {
     right: -60px;
     color: #c7c7c7 !important;
 }
+
 .ad-carousel .item a {
     color: inherit !important;
+}
+/*TimeLine*/
+
+.new_site_ribbon {
+    height: 40px;
+    background: rgb(0 148 255);
+    padding: 0 5px;
+    width: 150px;
+    position: relative;
+    line-height: 40px;
+    color: #fff;
+    margin: auto;
+}
+
+    .new_site_ribbon:before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-width: 20px 15px;
+        border-style: solid;
+        border-color: rgb(0 148 255) rgb(0 148 255 / 0%) rgb(0 148 255) #0094ff;
+        position: absolute;
+        right: -19px;
+    }
+
+    .new_site_ribbon:after {
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 0;
+        border-right: 15px solid rgb(0 148 255);
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        left: -15px;
+    }
+
+.step-vector-container {
+    display: inline-block;
+    max-width: 170px;
+}
+
+
+.sample {
+    width: 100%;
+    max-width: 120px;
+}
+
+
+.step-vector {
+    max-width: 120px;
 }

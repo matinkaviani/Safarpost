@@ -34,3 +34,15 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+//TimeLine
+var count = $(".box-container").find("li").length;
+var x = 3;
+var y = count % x;
+if (y == 1) {
+    $(".box-container").append(
+        '<li class="before-none"><div></div></li> <li class="before-none"><div></div></li>'
+    );
+}
+if (y == 2) {
+    $(".box-container").append('<li class="before-none"><div></div></li>');
+}
