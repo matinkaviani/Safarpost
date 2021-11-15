@@ -12,9 +12,19 @@ a {
     color: #0094ff;
     text-decoration: none;
 }
+
 svg {
     vertical-align: bottom;
 }
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
 body {
     background-color: #fff;
     font-family: IranYekan;
@@ -231,7 +241,7 @@ a.brand {
 }
 
 .font-16 {
-    font-size: 16px;
+    font-size: 16px !important;
 }
 
 .font-17 {
@@ -733,6 +743,10 @@ a:hover {
     padding-top: 40px;
 }
 
+.pb-40 {
+    padding-bottom: 40px;
+}
+
 .mt-30 {
     margin-top: 30px !important;
 }
@@ -787,6 +801,7 @@ span.arrow {
 
 .ad-carousel .owl-dots, .ad-carousel .owl-nav {
     display: block !important;
+    margin-top: 30px !important;
 }
 
 .min-w50 {
@@ -887,6 +902,7 @@ span.arrow {
     display: flex;
     align-items: center;
 }
+
 .step-title {
     text-align: right;
     max-width: 200px;
@@ -895,9 +911,9 @@ span.arrow {
     font-family: 'IranYekanBold';
     margin-bottom: 15px;
 }
+
 .second-steps {
-    margin-right: auto;
-    margin-left: 50px;
+    margin-left: auto;
 }
 
 .ribbon-second:before {
@@ -953,14 +969,84 @@ li.footer-border {
     margin-right: 20px;
 }
 
-li.footer-border:before {content: "";position: absolute;right: -13px;width: 1px;height: 100%;background: #0094ff;top: 50%;transform: translateY(-50%);}
+    li.footer-border:before {
+        content: "";
+        position: absolute;
+        right: -13px;
+        width: 1px;
+        height: 100%;
+        background: #0094ff;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 
-li.footer-border:last-child:before {
-    height: 50px;
-    top: 0;
-}
+    li.footer-border:last-child:before {
+        height: 50px;
+        top: 0;
+    }
 
 .fitsr-child-footerb:before {
     bottom: 0;
     transform: translateY(-9px) !important;
+}
+
+
+.footer a {
+    color: #212529;
+}
+
+
+.newsletter {
+    line-height: 35px;
+    max-width: 270px;
+}
+
+
+.footer input, .footer .input-group-prepend {
+    border-radius: 10px;
+    max-width: 180px;
+}
+
+
+
+.footer input {
+    padding: 10px;
+    border-right: 0;
+    border-left: 0;
+    font-size: 12px;
+    font-family: 'IranYekanBold';
+}
+
+.footer .input-group-text {
+    background: #fff;
+    border-radius: 10px;
+}
+
+.footer .input-group svg {
+    fill: #c7c7c7;
+    width: 25px;
+    height: 25px;
+}
+
+
+.footer input::placeholder {
+    color: #c7c7c7;
+}
+
+
+.footersend {
+    transform: rotate(225deg);
+    width: 12px;
+    height: 21px !important;
+}
+
+
+.footer .input-group button {
+    border: none;
+    background: #fff;
+}
+
+
+.text-black {
+    color: #212529 !important;
 }
