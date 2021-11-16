@@ -1050,3 +1050,26 @@ li.footer-border {
 .text-black {
     color: #212529 !important;
 }
+
+
+.social-footer ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.social-footer svg {
+    fill: #c7c7c7;
+    width: 20px;
+    height: 20px;
+}
+
+.max-w-1120 {
+    max-width: 1120px;
+}
+
+.line-h-30 {
+    line-height: 30px;
+}
+.m-inherit {
+    margin: inherit;
+}
