@@ -1141,3 +1141,18 @@ li.line {
 .line-active {
     background: #0094ff !important;
 }
+.border-blue {
+    padding: 30px;
+    border: solid 1px #0094ff;
+    border-radius: 7px;
+}
+span.border-label {
+    font-weight: 600;
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    font-size: 12px;
+    color: #0094ff;
+    background: #fff;
+    padding: 5px;
+}
