@@ -1070,9 +1070,50 @@ li.footer-border {
 .line-h-30 {
     line-height: 30px;
 }
+
 .m-inherit {
     margin: inherit;
 }
+
 .goldstar {
     color: #e1be00;
 }
+
+.breadcrumb.container {
+    background-color: transparent;
+}
+
+ol.breadcrumb {
+    background-color: transparent;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "\f053";
+    font-family: 'FontAwesome';
+    font-size: 10px;
+    color: #0094ff;
+}
+
+
+.breadcrumb-item a {
+    color: #6c7581;
+}
+
+.breadcrumb-item {
+    font-size: 14px;
+    font-family: 'IranYekanBold';
+}
+.ad-steps ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+    .ad-steps ul li div {
+        background: white;
+        border: solid 2px #6c757d;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        border-radius: 100%;
+    }
