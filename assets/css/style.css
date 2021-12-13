@@ -1103,17 +1103,41 @@ ol.breadcrumb {
     font-size: 14px;
     font-family: 'IranYekanBold';
 }
+
 .ad-steps ul {
     display: flex;
     list-style: none;
     justify-content: center;
+    align-items: center;
+    margin-top: 30px;
 }
 
     .ad-steps ul li div {
         background: white;
-        border: solid 2px #6c757d;
+        border: solid 2px #a5a5a5;
         width: 60px;
         height: 60px;
         line-height: 60px;
         border-radius: 100%;
+        margin-bottom: 10px;
+        color: #a5a5a5;
+        font-size: 20px;
     }
+
+li.line {
+    width: 100px;
+    background: #a5a5a5;
+    height: 2px;
+    position: relative;
+    bottom: 15px;
+}
+
+.step-active {
+    background: #0094ff !important;
+    color: #fff !important;
+    border-color: #0094ff !important;
+}
+
+.line-active {
+    background: #0094ff !important;
+}
