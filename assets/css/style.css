@@ -1204,3 +1204,7 @@ span.border-label {
     .message-text::placeholder {
         color: #a5a5a5;
     }
+.second-btn {
+    opacity: .8;
+    background: #a5a5a5;
+}
