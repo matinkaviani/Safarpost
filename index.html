@@ -117,31 +117,31 @@
                     <div class="main-tabs">
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" id="international-tab" data-toggle="tab" href="#international" role="tab" aria-controls="home" aria-selected="true">سفر خارجی</a>
+                                <a class="nav-link active" id="international-tab" data-toggle="tab" href="#international" role="tab" aria-controls="home" aria-selected="true">جستجوی آگهی سفر</a>
                             </li>
-                            <li class="nav-item">
+                            <!--<li class="nav-item">
                                 <a class="nav-link" id="domestic-tab" data-toggle="tab" href="#domestic" role="tab" aria-controls="profile" aria-selected="false">سفر داخلی</a>
-                            </li>
+                            </li>-->
                         </ul>
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="international" role="tabpanel" aria-labelledby="home-tab">
                                 <div class="top-filters">
-                                    <div class="col">
+                                    <!--<div class="col">
                                         <div class="px-2 iosbtn">
-                                            <div>ارسال </div>
+                                            <div>سفر داخلی </div>
                                             <div>
                                                 <div class="toggleWrapper">
                                                     <input type="checkbox" name="toggle2" class="mobileToggle" id="toggle2">
                                                     <label for="toggle2"></label>
                                                 </div>
                                             </div>
-                                            <span>دریافت </span>
+                                            <span>سفر خارجی </span>
                                         </div>
-                                    </div>
-                                    <div class="col">
+                                    </div>-->
+                                    <!--<div class="col">
                                         <div class="dropdown">
                                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                تهران
+                                                ایران
                                             </button>
                                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                 <a class="dropdown-item" href="#">شهر یک</a>
@@ -153,7 +153,7 @@
                                     <div class="col">
                                         <div class="dropdown">
                                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                امیر آباد
+                                               تهران
                                             </button>
                                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                 <a class="dropdown-item" href="#">شهر یک</a>
@@ -167,11 +167,37 @@
                                     </div>
                                     <div class="col py-2">
                                         <a href="#" class="btn btn-outline bg-white color-primary hover2">جستجو </a>
-                                    </div>
+                                    </div>-->
                                 </div>
                                 <div class="border p-3 collapse show" id="advancedfilter">
-                                    <label class="font-14">هواپیما</label>
-                                    <div class="filters">
+                                    <div class="filters mt-3">
+                                        <div class="position-relative d-inline-flex">
+                                            <div class="start-trip">
+                                                <input placeholder="شهر مبداء" type="text" />
+                                            </div>
+                                            <a href="#" class="changeicn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z" />
+                                                </svg>
+                                            </a>
+                                            <div class="dest-trip">
+                                                <input placeholder="شهر مقصد" type="text" />
+                                            </div>
+                                        </div>
+                                        <div class="start-date ml-3">
+                                            <input placeholder="تاریخ سفر" type="text" readonly />
+                                        </div>
+                                        <div class="end-date">
+                                            <input placeholder="نوع وسیله نقلیه" type="text" />
+                                        </div>
+                                        <div class="inputs ml-3">
+                                            <a href="#" class="mainbtn text-white search-home-btn hover1">جستجو </a>
+                                        </div>
+                                    </div>
+                                    <p class="mt-3 desc-home font-14">
+                                        با انتخاب شهر مبداء و شهر مقصد ، مسافر را جستجو کرده و بار مجاز خود را به وی تحویل دهید
+                                    </p>
+                                    <!--<div class="filters">
                                         <div class="position-relative d-inline-flex">
                                             <div class="start-trip">
                                                 <input placeholder="مبدا(شهر،فرودگاه)" type="text" />
@@ -194,32 +220,7 @@
                                         <div class="inputs ml-3 package-num">
                                             <input placeholder="تعداد بسته" type="text" />
                                         </div>
-                                    </div>
-                                    <label class="font-14 mt-2">قطار، خودرو شخصی</label>
-                                    <div class="filters">
-                                        <div class="position-relative d-inline-flex">
-                                            <div class="start-trip">
-                                                <input placeholder="مبدا(شهر،فرودگاه)" type="text" />
-                                            </div>
-                                            <a href="#" class="changeicn">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
-                                                    <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z" />
-                                                </svg>
-                                            </a>
-                                            <div class="dest-trip">
-                                                <input placeholder="مقصد(شهر،فرودگاه)" type="text" />
-                                            </div>
-                                        </div>
-                                        <div class="start-date ml-3">
-                                            <input placeholder="تاریخ رفت" type="text" readonly />
-                                        </div>
-                                        <div class="end-date">
-                                            <input placeholder="تاریخ برگشت" type="text" readonly />
-                                        </div>
-                                        <div class="inputs ml-3 package-num">
-                                            <input placeholder="تعداد بسته" type="text" />
-                                        </div>
-                                    </div>
+                                    </div>-->
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="domestic" role="tabpanel" aria-labelledby="profile-tab">

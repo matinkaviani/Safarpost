@@ -112,28 +112,28 @@
                 </h3>
                 <div class="ad-steps">
                     <ul>
-                        <li>
-                            <div>
+                        <li class="step-container">
+                            <div class="step-active">
                                 ۱
                             </div>
-                            <span>مبداء</span>
+                            <span>اطلاعات سفر</span>
                         </li>
-                        <li class="line"></li>
-                        <li>
-                            <div class="step-active">
+                        <li class="line  line-active"></li>
+                        <li class="step-container">
+                            <div>
                                 ۲
                             </div>
                             <span>مقصد</span>
                         </li>
-                        <li class="line line-active"></li>
-                        <li>
+                        <li class="line"></li>
+                        <li class="step-container">
                             <div>
                                 ۳
                             </div>
                             <span> شرایط</span>
                         </li>
                         <li class="line"></li>
-                        <li>
+                        <li class="step-container">
                             <div class="down-last">
                                 ۴
                             </div>
@@ -148,48 +148,101 @@
                                 <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z"></path>
                                 <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"></path>
                             </svg>
-                            اطلاعات مقصد و تحویل بار
+                            اطلاعات سفر
                         </span>
-                        <div class="d-inline-block mr-2">
-                            <div class="text-left">
-                                <label for="country">کشور</label>
-                            </div>                            <select id="country" class="form-select" aria-label="Default select example">
-                                <option selected>انتخاب کنید</option>
-                                <option value="1">آلمان</option>
-                                <option value="2">چین</option>
-                                <option value="3">آمریکا</option>
-                            </select>
-                        </div>
-                        <div class="d-inline-block mr-2">
-                            <div class="text-left">
-                                <label for="country">شهر</label>
-                            </div>                            <select id="country" class="form-select" aria-label="Default select example">
-                                <option selected>انتخاب کنید</option>
-                                <option value="1">لس آنجلس</option>
-                                <option value="2">نیویورک</option>
-                                <option value="3">شیکاگو</option>
-                            </select>
-                        </div>
-                        <div class="d-inline-block mr-2">
-                            <div class="text-left">
-                                <label for="country">تاریخ تحویل بار</label>
-                            </div>                            <select id="country" class="form-select" aria-label="Default select example">
-                                <option selected>انتخاب کنید</option>
-                                <option value="1">تاریخ یک</option>
-                                <option value="2">تاریخ دو</option>
-                                <option value="3">تاریخ سه</option>
-                            </select>
-                        </div>
-                        <div class="d-inline-block mr-2">
-                            <div class="text-left">
-                                <label for="country">محل تحویل بار</label>
-                            </div>                            <select id="country" class="form-select" aria-label="Default select example">
-                                <option selected>انتخاب کنید</option>
-                                <option selected>انتخاب کنید</option>
-                                <option value="1">تاریخ یک</option>
-                                <option value="2">تاریخ دو</option>
-                                <option value="3">تاریخ سه</option>
-                            </select>
+                        <div class="container">
+                            <div class="row">
+                                <div class="d-inline-block mr-2">
+                                    <div class="text-left">
+                                        <label for="country">کشور مبداء</label>
+                                    </div>           
+                                    <select id="country" class="form-select" aria-label="Default select example">
+                                        <option selected>انتخاب کنید</option>
+                                        <option value="1">آلمان</option>
+                                        <option value="2">چین</option>
+                                        <option value="3">آمریکا</option>
+                                    </select>
+                                </div>
+                                <div class="d-inline-block mr-2">
+                                    <div class="text-left">
+                                        <label for="country"> شهر مبداء</label>
+                                    </div>       
+                                    <select id="country" class="form-select" aria-label="Default select example">
+                                        <option selected>انتخاب کنید</option>
+                                        <option value="1">لس آنجلس</option>
+                                        <option value="2">نیویورک</option>
+                                        <option value="3">شیکاگو</option>
+                                    </select>
+                                </div>
+                                <div class="d-inline-block mr-2">
+                                    <div class="text-left">
+                                        <label for="country">تاریخ پرواز / سفر</label>
+                                    </div>         
+                                    <select id="country" class="form-select" aria-label="Default select example">
+                                        <option selected>انتخاب کنید</option>
+                                        <option value="1">تاریخ یک</option>
+                                        <option value="2">تاریخ دو</option>
+                                        <option value="3">تاریخ سه</option>
+                                    </select>
+                                </div>
+                                <div class="d-inline-block mr-2">
+                                    <div class="text-left">
+                                        <label for="country">محل دریافت بار</label>
+                                    </div>           
+                                    <select id="country" class="form-select" aria-label="Default select example">
+                                        <option selected>انتخاب کنید</option>
+                                        <option value="1">فرودگاه مبداء</option>
+                                        <option value="2">محل اعلامی خودم</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="d-inline-block mr-2">
+                                    <div class="text-left">
+                                        <label for="country">کشور مقصد</label>
+                                    </div>
+                                    <select id="country" class="form-select" aria-label="Default select example">
+                                        <option selected="">انتخاب کنید</option>
+                                        <option value="1">آلمان</option>
+                                        <option value="2">چین</option>
+                                        <option value="3">آمریکا</option>
+                                    </select>
+                                </div>
+                                <div class="d-inline-block mr-2">
+                                    <div class="text-left">
+                                        <label for="country">شهر مقصد</label>
+                                    </div>
+                                    <select id="country" class="form-select" aria-label="Default select example">
+                                        <option selected="">انتخاب کنید</option>
+                                        <option value="1">لس آنجلس</option>
+                                        <option value="2">نیویورک</option>
+                                        <option value="3">شیکاگو</option>
+                                    </select>
+                                </div>
+                                <div class="d-inline-block mr-2">
+                                    <div class="text-left">
+                                        <label for="country">محل تحویل بار</label>
+                                    </div>
+                                    <select id="country" class="form-select" aria-label="Default select example">
+                                        <option selected="">انتخاب کنید</option>
+                                        <option value="1">فرودگاه مقصد</option>
+                                        <option value="2">محل اعلامی خودم</option>
+                                    </select>
+                                </div>
+                                <div class="d-inline-block mr-2">
+                                    <div class="text-left">
+                                        <label for="country">وسیله سفر</label>
+                                    </div>
+                                    <select id="country" class="form-select" aria-label="Default select example">
+                                        <option selected="">انتخاب کنید</option>
+                                        <option value="1">هواپیما</option>
+                                        <option value="2">قطار</option>
+                                        <option value="3">خودروی شخصی</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
                         </div>
                         <div>
                             <textarea cols="20" class="message-text" rows="4" placeholder="توضیحات بیشتر خود را بنویسید..."></textarea>

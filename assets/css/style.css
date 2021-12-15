@@ -502,7 +502,7 @@ h2.main-subtitle {
     background: #e5e5e5;
     font-size: 14px;
     color: #6c6c6c;
-    padding: 9px 65px;
+    padding: 15px 65px;
     border-top-right-radius: 7px;
     border-top-left-radius: 7px;
     transition: ease .5s;
@@ -585,7 +585,6 @@ a.changeicn {
     border: none !important;
     border-radius: 5px;
     border-top-right-radius: 0;
-    border-top-left-radius: 0;
     background-color: #e5e5e5;
     text-align: right;
 }
@@ -1240,7 +1239,7 @@ li.line {
     background: #a5a5a5;
     height: 2px;
     position: relative;
-    bottom: 15px;
+    bottom: 5px;
 }
 
 .step-active {
@@ -1354,4 +1353,46 @@ textarea.message-text {
 
 .profile-form select {
     width: 100%;
+}
+
+.search-home-btn {
+    width: 150px;
+    justify-content: center;
+    border: solid 1px #0094ff;
+}
+
+p.mt-3.desc-home {
+    position: relative;
+    padding-right: 15px;
+    color: #626262;
+}
+
+    p.mt-3.desc-home:before {
+        content: "";
+        position: absolute;
+        right: 0;
+        background: #0094ff;
+        width: 5px;
+        height: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 100%;
+    }
+
+.search-home-btn:hover {
+    color: #333333 !important;
+    border: solid 1px #333333;
+}
+
+.ad-steps li.step-container {
+    max-width: 70px;
+    position: relative;
+}
+
+.ad-steps span {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    width: 100px;
+    transform: translateX(-50%);
 }
