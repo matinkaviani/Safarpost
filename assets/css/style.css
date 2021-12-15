@@ -38,9 +38,28 @@ body {
     font-family: IranYekan;
     user-select: none;
 }
+
 input:focus {
     box-shadow: none !important;
     border-color: #ced4da !important;
+}
+
+.upload-label {
+    background: #0094ff;
+    margin-right: 15px;
+    color: #fff !important;
+}
+
+i {
+    vertical-align: middle;
+}
+
+.form-control {
+    color: #a5a5a5;
+}
+
+.form-group input::placeholder {
+    color: #a5a5a5;
 }
 /*navigation*/
 .navbar {
@@ -137,15 +156,19 @@ input:focus {
         margin-bottom: 25px !important;
         justify-content: center;
     }
+
     .mobile-container .login-btn {
         margin-left: auto;
     }
+
     .nav-active .mainbtn {
         margin: auto;
     }
+
     .mainbtn {
         max-width: 160px;
     }
+
     .end-date {
         text-align: center;
     }
@@ -1312,18 +1335,23 @@ textarea.message-text {
     margin-right: auto;
     margin-top: 20px;
 }
+
 #mobilelogin {
     display: none;
 }
+
 #emaillogincontainer {
     display: none;
 }
+
 #mobilelogin, #emaillogin {
-    color:#0094ff
+    color: #0094ff
 }
+
 .profile-form input {
     font-size: 14px;
 }
+
 .profile-form select {
     width: 100%;
 }
