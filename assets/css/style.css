@@ -38,6 +38,10 @@ body {
     font-family: IranYekan;
     user-select: none;
 }
+input:focus {
+    box-shadow: none !important;
+    border-color: #ced4da !important;
+}
 /*navigation*/
 .navbar {
     width: 100%;
@@ -133,12 +137,15 @@ body {
         margin-bottom: 25px !important;
         justify-content: center;
     }
-
+    .mobile-container .login-btn {
+        margin-left: auto;
+    }
     .nav-active .mainbtn {
-        max-width: 160px;
         margin: auto;
     }
-
+    .mainbtn {
+        max-width: 160px;
+    }
     .end-date {
         text-align: center;
     }
