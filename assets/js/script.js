@@ -46,3 +46,16 @@ if (y == 1) {
 if (y == 2) {
     $(".box-container").append('<li class="before-none"><div></div></li>');
 }
+
+$("#emaillogin").click(function () {
+    $("#mobilelogin").css("display", "block");
+    $("#mobilelogincontainer").css("display", "none");
+    $("#emaillogin").css("display", "none");
+    $("#emaillogincontainer").css("display", "block");
+});
+$("#mobilelogin").click(function () {
+    $("#emaillogin").css("display", "block");
+    $("#emaillogincontainer").css("display", "none");
+    $("#mobilelogin").css("display", "none");
+    $("#mobilelogincontainer").css("display", "block");
+});

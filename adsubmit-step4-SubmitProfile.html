@@ -127,14 +127,14 @@
                         </li>
                         <li class="line"></li>
                         <li>
-                            <div class="step-active">
+                            <div>
                                 ۳
                             </div>
                             <span> شرایط</span>
                         </li>
-                        <li class="line line-active"></li>
+                        <li class="line"></li>
                         <li>
-                            <div class="down-last">
+                            <div class="down-last step-active">
                                 ۴
                             </div>
                             <span class="down">تایید نهایی</span>
@@ -144,210 +144,107 @@
                 <div class="container mt-4">
                     <div class="border-blue position-relative text-left">
                         <span class="border-label">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0094ff" class="bi bi-tags-fill" viewBox="0 0 16 16">
-                                <path d="M2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586V2zm3.5 4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-                                <path d="M1.293 7.793A1 1 0 0 1 1 7.086V2a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l.043-.043-7.457-7.457z" />
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0094ff" class="bi bi-card-list" viewBox="0 0 16 16">
+                                <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
+                                <path d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
                             </svg>
-                            تعرفه ارسال بار
+                            دریافت مشخصات
                         </span>
-                        <table class="table table-hover price-table">
-                            <tbody>
-                                <tr>
-                                    <th scope="row">به ازای هر مدرک</th>
-                                    <td class="bold">
-                                        <select id="country" class="form-select text-black" aria-label="Default select example">
-                                            <option selected="">۱۰,۰۰۰,۰۰۰ ریال</option>
-                                            <option value="1">۱۲,۰۰۰,۰۰۰ ریال</option>
-                                            <option value="1">۱۴,۰۰۰,۰۰۰ ریال</option>
-                                            <option value="2">۱۶,۰۰۰,۰۰۰ ریال</option>
+                        <div class="container profile-form">
+                            <div class="row">
+                                <div class="col-md-12 p-0">
+                                    <div class="col-md-4 col-sm-6 col-xs-12 float-left">
+                                        <div class="form-group full-width-text">
+                                            <span class="red">
+                                                <span class="field-validation-valid" data-valmsg-for="Name" data-valmsg-replace="true"></span>
+                                            </span>
+                                            <input class="form-control text-box single-line" data-val="true" data-val-required="*" id="Name" name="Name" placeholder="نام *" type="text" value="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-12 float-left">
+                                        <div class="form-group full-width-text">
+                                            <span class="red">
+                                                <span class="field-validation-valid" data-valmsg-for="Family" data-valmsg-replace="true"></span>
+                                            </span>
+                                            <input class="form-control text-box single-line" data-val="true" data-val-required="*" id="Family" name="Family" placeholder="نام خانوادگی *" type="text" value="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-12 float-left">
+                                        <div class="form-group  full-width-text">
+                                            <span class="red">
+                                                <span class="field-validation-valid" data-valmsg-for="FatherName" data-valmsg-replace="true"></span>
+                                            </span>
+                                            <input class="form-control text-box single-line" data-val="true" data-val-required="*" id="FatherName" name="FatherName" placeholder="نام پدر *" type="text" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 p-0">
+                                    <div class="col-md-4 col-sm-6 col-xs-12 float-right">
+                                        <div class="form-group  full-width-text iconcalendar">
+                                            <span class="red">
+                                                <span class="field-validation-valid" data-valmsg-for="BirthDate" data-valmsg-replace="true"></span>
+                                            </span>
+                                            <input autocomplete="off" class="form-control datepickerM example1 text-box single-line pwt-datepicker-input-element" id="BirthDate" name="BirthDate" placeholder="تاریخ تولد *" type="text" value="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-12 float-right">
+                                        <div class="form-group full-width-text">
+                                            <span class="red">
+                                                <span class="field-validation-valid" data-valmsg-for="NationalCode" data-valmsg-replace="true"></span>
+                                            </span>
+                                            <input class="form-control text-box single-line" id="NationalCode" name="NationalCode" placeholder="کد ملی *" type="text" value="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-12 float-right">
+
+                                        <span class="red">
+                                            <span class="field-validation-valid" data-valmsg-for="Gender" data-valmsg-replace="true"></span>
+                                        </span>
+                                        <select class="form-control drpdn bs-select-hidden" id="Gender" name="Gender" style="margin-bottom:15px;">
+                                            <option value="وضعیت تاهل">وضعیت تاهل *</option>
+                                            <option value="مجرد">مجرد</option>
+                                            <option value="متاهل">متاهل</option>
                                         </select>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">به ازای هر کیلو بار</th>
-                                    <td class="bold">
-                                        <select id="country" class="form-select text-black" aria-label="Default select example">
-                                            <option selected="">۱۰,۰۰۰,۰۰۰ ریال</option>
-                                            <option value="1">۱۲,۰۰۰,۰۰۰ ریال</option>
-                                            <option value="1">۱۴,۰۰۰,۰۰۰ ریال</option>
-                                            <option value="2">۱۶,۰۰۰,۰۰۰ ریال</option>
-                                        </select>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 p-0">
+                                    <div class="col-md-4 col-sm-6 col-xs-12 float-right">
+                                        <div class="form-group full-width-text">
+                                            <span class="red">
+                                                <span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                                            </span>
+                                            <input class="form-control text-box single-line" data-val="true" data-val-email="ایمیل وارد شده صحیح نمی باشد" id="Email" name="Email" placeholder="ایمیل *" type="email" value="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-12 float-right">
+                                        <div class="form-group full-width-text">
+                                            <span class="red">
+                                                <span class="field-validation-valid" data-valmsg-for="Tel" data-valmsg-replace="true"></span>
+                                            </span>
+                                            <input class="form-control text-box single-line" id="Tel" name="Tel" placeholder="تلفن همراه *" type="text" value="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-12 float-right">
+                                        <div class="form-group full-width-text">
+                                            <span class="red">
+                                                <span class="field-validation-valid" data-valmsg-for="Mobile" data-valmsg-replace="true"></span>
+                                            </span>
+                                            <input class="form-control text-box single-line" id="Mobile" name="Mobile" placeholder="تلفن ثابت *" type="text" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group mb-0">
+                                        <span class="red">
+                                            <span class="field-validation-valid" data-valmsg-for="Address" data-valmsg-replace="true"></span>
+                                        </span>
+                                        <input class="form-control text-box single-line" id="Address" name="Address" placeholder="آدرس *" type="text" value="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="border-blue position-relative text-left mt-5">
-                        <span class="border-label">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#24a019" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                            </svg>
-                            چه بسته هایی را جابجا میکنم
-                        </span>
-                        <div class="d-inline-block mr-5">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="docs">
-                                <label class="form-check-label" for="docs">
-                                    اسناد و مدارک
-                                </label>
-                            </div>
-                        </div>
-                        <div class="d-inline-block mr-5">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="clothes">
-                                <label class="form-check-label" for="clothes">
-                                    لباس
-                                </label>
-                            </div>
-                        </div>
-                        <div class="d-inline-block mr-5">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="foods">
-                                <label class="form-check-label" for="foods">
-                                    مواد غذایی
-                                </label>
-                            </div>
-                        </div>
-                        <div class="d-inline-block mr-5">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="registeredDoc">
-                                <label class="form-check-label" for="registeredDoc">
-                                    اسناد ثبتی
-                                </label>
-                            </div>
-                        </div>
-                        <div class="d-inline-block mr-5">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="luggage">
-                                <label class="form-check-label" for="luggage">
-                                    چمدان
-                                </label>
-                            </div>
-                        </div>
-                        <div class="d-inline-block mr-5">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="present">
-                                <label class="form-check-label" for="present">
-                                    کادویی
-                                </label>
-                            </div>
-                        </div>
-                        <div class="d-inline-block mr-5">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="electrics">
-                                <label class="form-check-label" for="electrics">
-                                    لوازم الکترونیکی
-                                </label>
-                            </div>
-                        </div>
-                        <div class="d-inline-block mr-5">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="mobile">
-                                <label class="form-check-label" for="mobile">
-                                    موبایل
-                                </label>
-                            </div>
-                        </div>
-                        <textarea class="message-text" rows="1" placeholder="توضیحات بیشتر خود را بنویسید..."></textarea>
-                    </div>
-                    <div class="border-blue position-relative text-left mt-5">
-                        <span class="border-label">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#d41919" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
-                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
-                            </svg>
-                            چه بسته هایی را جابجا نمی کنم
-                        </span>
-                        <div class="d-inline-block mr-5">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="ndocs">
-                                <label class="form-check-label" for="ndocs">
-                                    اسناد و مدارک
-                                </label>
-                            </div>
-                        </div>
-                        <div class="d-inline-block mr-5">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="nclothes">
-                                <label class="form-check-label" for="nclothes">
-                                    لباس
-                                </label>
-                            </div>
-                        </div>
-                        <div class="d-inline-block mr-5">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="nfoods">
-                                <label class="form-check-label" for="nfoods">
-                                    مواد غذایی
-                                </label>
-                            </div>
-                        </div>
-                        <div class="d-inline-block mr-5">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="nregisteredDoc">
-                                <label class="form-check-label" for="nregisteredDoc">
-                                    اسناد ثبتی
-                                </label>
-                            </div>
-                        </div>
-                        <div class="d-inline-block mr-5">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="nluggage">
-                                <label class="form-check-label" for="nluggage">
-                                    چمدان
-                                </label>
-                            </div>
-                        </div>
-                        <div class="d-inline-block mr-5">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="npresent">
-                                <label class="form-check-label" for="npresent">
-                                    کادویی
-                                </label>
-                            </div>
-                        </div>
-                        <div class="d-inline-block mr-5">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="nelectrics">
-                                <label class="form-check-label" for="nelectrics">
-                                    لوازم الکترونیکی
-                                </label>
-                            </div>
-                        </div>
-                        <div class="d-inline-block mr-5">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="nmobile">
-                                <label class="form-check-label" for="nmobile">
-                                    موبایل
-                                </label>
-                            </div>
-                        </div>
-                        <textarea class="message-text" rows="1" placeholder="توضیحات بیشتر خود را بنویسید..."></textarea>
-                    </div>
-                    <div class="border-blue position-relative text-left mt-5">
-                        <span class="border-label">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#e1be00" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                            </svg>
-                            چه خدمات خاصی ارائه میکنم
-                        </span>
-                        <div class="d-inline-block mr-5">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="purchase">
-                                <label class="form-check-label" for="purchase">
-                                    خرید اینترنتی
-                                </label>
-                            </div>
-                        </div>
-                        <div class="d-inline-block mr-5">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="transport">
-                                <label class="form-check-label" for="transport">
-                                    ارسال بار از مقصد به مقصد دیگر
-                                </label>
-                            </div>
-                        </div>
-                        <textarea class="message-text" rows="1" placeholder="توضیحات بیشتر خود را بنویسید..."></textarea>
-                    </div>
+                                        
                     <div class="text-center mt-3 d-inline-flex">
                         <div>
                             <a href="#" class="mainbtn second-btn color-white justify-content-center bold font-14 text-white max-w-250 m-inherit m-auto">

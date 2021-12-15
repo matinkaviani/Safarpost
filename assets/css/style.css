@@ -138,28 +138,36 @@ body {
         max-width: 160px;
         margin: auto;
     }
+
     .end-date {
         text-align: center;
     }
+
     .package-num {
         text-align: center;
     }
+
     .resp-padding {
         padding: 20px;
     }
+
     .resp-margin-bottom {
         margin-bottom: 15px;
     }
+
     .step-vector {
         margin: 15px;
     }
+
     .step-vector-container p {
         margin-left: 0 !important;
         margin-right: 0 !important;
     }
+
     .ad-carousel .font-10 {
         font-size: 13px;
     }
+
     .footer .text-left, .footer .text-right {
         text-align: center !important;
     }
@@ -167,6 +175,7 @@ body {
     .filters input {
         min-width: 155px !important;
     }
+
     .main-tabs {
         padding: 15px;
     }
@@ -1276,4 +1285,38 @@ span.border-label {
 
 textarea.message-text {
     min-height: auto;
+}
+
+.mobile-input {
+    max-width: 200px;
+    direction: ltr;
+}
+
+.mobile-container {
+    max-width: 450px;
+    margin: auto;
+    padding: 20px;
+    border: solid 1px #dadada;
+    border-radius: 5px;
+}
+
+.login-btn {
+    max-width: 120px;
+    margin-right: auto;
+    margin-top: 20px;
+}
+#mobilelogin {
+    display: none;
+}
+#emaillogincontainer {
+    display: none;
+}
+#mobilelogin, #emaillogin {
+    color:#0094ff
+}
+.profile-form input {
+    font-size: 14px;
+}
+.profile-form select {
+    width: 100%;
 }
