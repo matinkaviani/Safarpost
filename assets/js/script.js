@@ -13,6 +13,7 @@ toggler.addEventListener(
     true
 );
 $(".start-date").find("input").pDatepicker({ initialValue: false, 'position': [43, -27], format: 'YYYY/MM/DD' });
+$("#BirthDate").pDatepicker({ initialValue: false, 'position': [43, -27], format: 'YYYY/MM/DD' });
 
 $('.owl-carousel').owlCarousel({
     loop:true,

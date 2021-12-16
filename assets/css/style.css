@@ -444,6 +444,7 @@ li.logins {
     display: flex;
     justify-content: space-between;
     transition: ease .5s;
+    border: solid 1px #0094ff;
 }
 
     .mainbtn a {
@@ -1303,6 +1304,7 @@ span.border-label {
 .second-btn {
     opacity: .8;
     background: #a5a5a5;
+    border-color: #b6b6b6;
 }
 
 .price-table td, .price-table th {
@@ -1396,4 +1398,26 @@ p.mt-3.desc-home {
     left: 50%;
     width: 100px;
     transform: translateX(-50%);
+}
+
+.hover3:hover {
+    color: #333333 !important;
+    border: solid 1px #333333;
+    background: #fff;
+}
+
+.ad-submit-btn {
+    border: solid 1px #0094ff;
+}
+
+    .ad-submit-btn:hover svg {
+        fill: #333333;
+    }
+
+    .ad-submit-btn svg {
+        transition: ease .5s;
+    }
+.form-control:disabled, .form-control[readonly] {
+    background-color: #fff;
+    opacity: 1;
 }
