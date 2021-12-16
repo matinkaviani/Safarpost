@@ -217,7 +217,7 @@ i {
 
     .down-last {
         position: relative;
-        bottom: -11px;
+        bottom: 0px;
     }
 
     span.down {
@@ -516,6 +516,7 @@ h2.main-subtitle {
 
 .nav-tabs {
     justify-content: flex-start;
+    border-bottom: none;
 }
 
 
