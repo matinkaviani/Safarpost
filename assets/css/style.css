@@ -1421,3 +1421,9 @@ p.mt-3.desc-home {
     background-color: #fff;
     opacity: 1;
 }
+.font-25 {
+    font-size: 25px;
+}
+.contact-container svg {
+    vertical-align: middle;
+}
