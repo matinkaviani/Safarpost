@@ -1427,3 +1427,6 @@ p.mt-3.desc-home {
 .contact-container svg {
     vertical-align: middle;
 }
+.raduis5 {
+    border-radius: 5px;
+}
