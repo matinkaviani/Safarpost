@@ -1455,3 +1455,33 @@ p.mt-3.desc-home {
 .max-w-100 {
     max-width: 100%;
 }
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    position: relative;
+}
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active:after {
+        position: absolute;
+        content: "";
+        background: #0094ff;
+        width: 100%;
+        height: 2px;
+        display: block;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+.nav-item.nav-link {
+    padding: 15px 40px;
+    border: none;
+}
+.melo-border {
+    border-color: #dee2e6 !important;
+}
+.ad-desc {
+    font-size: 14px;
+    line-height: 30px;
+}
+.reviews-view .form-row > .col, .form-row > [class*=col-] {
+    padding-left: 15px;
+    padding-right: 15px;
+}
