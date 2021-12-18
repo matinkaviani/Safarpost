@@ -301,6 +301,70 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row mt-5">
+                        <div class="col-md-12">
+                            <nav>
+                                <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">توضیحات</a>
+                                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">نظرات</a>
+                                </div>
+                            </nav>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">test1</div>
+                                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                    <div class="product-tabs__content">
+                                        <div class="product-tabs__pane product-tabs__pane--active" id="tab-reviews">
+                                            <div class="reviews-view">
+                                                <div class="reviews-view__list">
+                                                    <h3 class="text-left font-20 mb-0">نظرات شما</h3>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="text-left my-3">
+                                                            <i class="fa fa-star font-10 goldstar"></i>
+                                                            <i class="fa fa-star font-10 goldstar"></i>
+                                                            <i class="fa fa-star font-10 goldstar"></i>
+                                                            <i class="fa fa-star font-10 goldstar"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-lg-9 col-xl-8 text-left">
+                                                        <div class="form-row mb-3">
+                                                            <input type="hidden" id="txtProductID" value="93">
+                                                            <div class="form-group col-md-4">
+                                                                <label for="review-author">نام شما</label>
+                                                                <input type="text" class="form-control" id="txtName" placeholder="نام شما">
+                                                            </div>
+                                                            <div class="form-group col-md-4">
+                                                                <label for="review-email">آدرس ایمیل</label>
+                                                                <input type="text" class="form-control" id="txtEmail" placeholder="آدرس ایمیل">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="review-text">متن نظر</label>
+                                                            <textarea class="form-control" id="txtComment" rows="6"></textarea>
+                                                        </div>
+                                                        <div class="form-group mb-0">
+                                                            <button type="button" id="BtnSubmitComment" class="btn btn-primary btn-md">ارسال نظر</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="reviews-list">
+                                                    <ol class="reviews-list__content">
+                                                    </ol>
+
+                                                </div>
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
