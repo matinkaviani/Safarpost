@@ -1430,3 +1430,21 @@ p.mt-3.desc-home {
 .raduis5 {
     border-radius: 5px;
 }
+.contactus-form .form-group {
+    margin-bottom: 25px;
+    text-align: right;
+}
+.contactus-form .input-group {
+    width: 100%;
+}
+.contactus-form .input-group-addon {
+    border-width: 0 0 1px;
+    font-size: 18px;
+    padding: 9px 0 3px;
+    vertical-align: top;
+    border-bottom: 1px solid #e1e6eb;
+}
+.contactus-form .form-control {
+    border-width: 0 0 1px;
+    font-size: 16px;
+}
