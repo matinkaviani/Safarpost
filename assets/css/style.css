@@ -1448,3 +1448,10 @@ p.mt-3.desc-home {
     border-width: 0 0 1px;
     font-size: 16px;
 }
+.ad-inner-title {
+    max-width: 310px;
+    margin-right: 0;
+}
+.max-w-100 {
+    max-width: 100%;
+}
