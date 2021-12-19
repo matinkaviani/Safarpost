@@ -150,7 +150,43 @@ i {
         transition: all 0.5s linear;
         opacity: 0.5;
     }
+    .ad-container-title:after {
+        width: 50px !important;
+    }
 
+    .ad-container-title:before {
+        width: 50px !important;
+    }
+
+    .col-sm-4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+    }
+    .col-sm-5 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+    .col-sm-6 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col-sm-3 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .col-sm-2 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+    }
     ul.nav-btns {
         margin-top: 25px;
         margin-bottom: 25px !important;
@@ -821,7 +857,9 @@ a:hover {
     margin: auto;
     font-size: 12px;
 }
-
+.max-w-300 {
+    max-width: 300px;
+}
 .card-steps:before {
     content: "";
     position: absolute;
@@ -1485,3 +1523,64 @@ p.mt-3.desc-home {
     padding-left: 15px;
     padding-right: 15px;
 }
+.comment-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.avatar {
+    margin-left: 10px;
+}
+
+.c-message {
+    font-size: 14px;
+}
+
+.c-date {
+    position: absolute;
+    left: 0;
+    font-size: 12px;
+}
+span.comment-message {
+    text-align: right;
+    margin-top: 20px;
+    padding: 5px 10px;
+    border: solid 1px #dadada;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.ad-container {
+    background: #f5f5f5;
+    padding: 30px 0;
+}
+    .ad-container .ad-card {
+        margin-bottom: 15px;
+    }
+.ad-container-title {
+    position: relative;
+    max-width: 550px;
+    margin: auto;
+}
+
+    .ad-container-title:after {
+        position: absolute;
+        left: 45px;
+        top: 50%;
+        transform: translateY(-50%);
+        content: "";
+        background: #0094ff;
+        width: 130px;
+        height: 2px;
+    }
+    .ad-container-title:before {
+        position: absolute;
+        right: 45px;
+        top: 50%;
+        transform: translateY(-50%);
+        content: "";
+        background: #0094ff;
+        width: 130px;
+        height: 2px;
+    }
